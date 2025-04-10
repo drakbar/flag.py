@@ -1,0 +1,2 @@
+# MANIFEST.in
+include flag/lib/libflag.so

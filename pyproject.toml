@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flag"
+version = "0.1.0"
+description = "A python wrapper for flag.h"
+readme = "README.md"
+license =  "MIT"
+dependencies = []
+requires-python = ">=3.10"
+
+[tool.setuptools]
+package-dir = { "" = "flag" }
+
+[tool.setuptools.package-data]
+"lib" = ["lib/libflag.so"]
