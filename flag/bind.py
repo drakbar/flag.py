@@ -143,7 +143,7 @@ def rest_argv() -> typing.List[str]:
 
 """
     in order to pass FILE* to functions from objects such as
-    sys.stdout, and sys.stderr a lower level libc function 
+    sys.stdout, and sys.stderr a lower level libc function
     [fdopen, fopen] needs to be available to retrieve those pointers.
 """
 

@@ -33,7 +33,7 @@ class FlagUint64:
         this.ptr = ptr
 
     def __int__(this) -> int:
-        return this.ptr.contents.value 
+        return this.ptr.contents.value
 
 class FlagSizeT:
     ptr : POINTER(c_size_t)
@@ -42,14 +42,14 @@ class FlagSizeT:
         this.ptr = ptr
 
     def __int__(this) -> int:
-        return this.ptr.contents.value 
+        return this.ptr.contents.value
 
 class FlagStr:
     ptr : POINTER(c_char_p)
 
     def __init__(this, ptr: POINTER(c_char_p)) -> None:
         this.ptr = ptr
-   
+
     def __add__(this, other) -> str:
         if isinstance(other, FlagStr):
             return string_at(this.ptr[0]).decode() +    \
@@ -59,7 +59,7 @@ class FlagStr:
         else:
             name = type(other).__name__
             raise NotImplementedError(f"No Implementation for: {name}")
-    
+
     def __str__(this) -> str:
         return string_at(this.ptr[0]).decode()
 
