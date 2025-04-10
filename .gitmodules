@@ -1,0 +1,3 @@
+[submodule "external/flag.h"]
+	path = external/flag.h
+	url = https://github.com/tsoding/flag.h.git
