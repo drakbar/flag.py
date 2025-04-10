@@ -11,8 +11,6 @@ def usage(stream : io.IOBase) -> None:
     flag.print_options(stream)
 
 if __name__ == "__main__":
-
-
     help  = flag.bool("help", False, "Print this help to stdout and exit with 0")
     line  = flag.str("line", "Hi!", "Line to output to the file")
     count = flag.size("count", 64, "Amount of lines to generate")
