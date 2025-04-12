@@ -30,8 +30,6 @@ if __name__ == "__main__":
 
     if rest_argc <= 0:
         usage(sys.stderr)
-        # with open("poop", "w") as file:
-        #     usage(file)
         print("ERROR: no ouput files provided", file = sys.stderr)
         exit(1)
 
